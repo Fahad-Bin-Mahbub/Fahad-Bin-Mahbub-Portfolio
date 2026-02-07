@@ -1,82 +1,87 @@
-# Fahad Portfolio (Next.js + TypeScript + Tailwind + Framer Motion)
+# Fahad Bin Mahbub - Personal Portfolio
 
-A modern, animation-forward portfolio site built for **GitHub Pages** via **static export**.
+A modern, high-performance, and animation-rich personal portfolio website built with **Next.js**, **TypeScript**, and **Tailwind CSS**. This project showcases my research interests in Human-Computer Interaction (HCI), Usable Security, and more, along with my technical projects and professional experience.
 
-## Quick start
+## 🚀 Features
 
-```bash
-npm install
-npm run dev
-```
+- **Modern & Responsive Design**: A clean, academic yet modern aesthetic that works perfectly on all devices.
+- **Dark/Light Mode**: Seamless theme switching support.
+- **Smooth Animations**: Powered by **Framer Motion** for engaging user interactions.
+- **Research & Projects Showcase**: Dedicated sections to highlight academic research and technical projects.
+- **Optimized Performance**: Built with Next.js App Router for speed and SEO.
+- **Easy Customization**: Data-driven content management via `lib/data.ts`.
 
-Open http://localhost:3000
+## 🛠️ Tech Stack
 
-## Edit your content
+- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Deployment**: GitHub Pages (Static Export)
 
-All portfolio content lives in:
+## 🏁 Getting Started
 
-- `lib/data.ts` (projects, experience, skills, social links, etc.)
-- `public/cv.pdf` (your CV PDF)
+To run this project locally, follow these steps:
 
-> Tip: Replace placeholder `href: "#"` links with your real project URLs.
+### Prerequisites
 
-## Build (static export)
+- Node.js (v18 or higher)
+- npm or yarn
 
-```bash
-npm run build
-```
+### Installation
 
-This generates a static site into `./out`.
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/Fahad-Bin-Mahbub/Fahad-Bin-Mahbub-Portfolio.git
+    cd Fahad-Bin-Mahbub-Portfolio
+    ```
 
-## Deploy to GitHub Pages (recommended: included GitHub Actions workflow)
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-This repo includes: `.github/workflows/deploy.yml`
+3.  **Run the development server**:
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    ```
 
-### 1) Create a GitHub repo
+4.  **Open your browser**:
+    Navigate to [http://localhost:3000](http://localhost:3000) to see the application running.
 
-Create a new repository (for example) **`fahad-portfolio`**.
+## 📂 Project Structure
 
-### 2) Push this code to `main`
+- `app/`: Next.js App Router pages and layouts.
+- `components/`: Reusable UI components.
+- `lib/data.ts`: Centralized data file for easy content updates.
+- `public/`: Static assets (images, CV, etc.).
 
-```bash
-git init
-git add .
-git commit -m "Initial commit"
-git branch -M main
-git remote add origin https://github.com/<YOUR_USERNAME>/<YOUR_REPO>.git
-git push -u origin main
-```
+## 🚀 Deployment
 
-### 3) Enable GitHub Pages
+This project is configured for **GitHub Pages** using static export.
 
-In your repo:
+1.  **Build the project**:
+    ```bash
+    npm run build
+    ```
+    This generates a static site in the `out/` directory.
 
-- **Settings → Pages**
-- Under **Build and deployment**, select **GitHub Actions**
+2.  **Push to GitHub**:
+    The included GitHub Actions workflow (`.github/workflows/deploy.yml`) will automatically build and deploy the site to GitHub Pages when you push to the `main` branch.
 
-Then push to `main` (or run the workflow manually). GitHub Actions will:
+## 📄 License
 
-- install dependencies
-- build a static export
-- deploy the `out` folder to Pages
+This project is open source and available under the [MIT License](LICENSE).
 
-### 4) Visit your site
+## 📬 Contact
 
-Your portfolio will be hosted at:
+- **GitHub**: [Fahad-Bin-Mahbub](https://github.com/Fahad-Bin-Mahbub)
+- **LinkedIn**: [Fahad Bin Mahbub](https://www.linkedin.com/in/fahadbinmahbub/)
+- **Email**: [fahadbinmahbub@gmail.com](mailto:fahadbinmahbub@gmail.com)
 
-`https://<YOUR_USERNAME>.github.io/<YOUR_REPO>/`
 
-## Base path notes
-
-For GitHub Pages project sites, Next.js must be built with a `basePath` (`/<repo>`).
-This project auto-detects the repo name **in GitHub Actions**, so you usually don't need to change anything.
-
-If you are hosting at a custom domain (root), you can set:
-
-- `NEXT_PUBLIC_BASE_PATH=""`
-
-(Or remove `basePath`/`assetPrefix` in `next.config.ts`.)
-
----
-
-Made with ❤️ using Next.js, Tailwind CSS, and Framer Motion.
