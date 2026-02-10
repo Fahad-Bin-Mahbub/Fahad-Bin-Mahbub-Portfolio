@@ -28,7 +28,7 @@ export function Hero() {
 
          <div className="flex-1 text-center md:text-left">
             <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl mb-6">
-              Fahad Bin Mahbub.
+              Fahad Bin Mahbub
             </h1>
             <p className="text-xl md:text-2xl font-medium text-muted-foreground mb-8 leading-relaxed max-w-2xl mx-auto md:mx-0">
                Software Engineer & Researcher specializing in human-centered evaluation.
@@ -58,7 +58,7 @@ export function Hero() {
                         key={s.label}
                         href={s.href}
                         target="_blank"
-                        className="h-10 w-10 flex items-center justify-center rounded-full bg-muted text-muted-foreground transition-all hover:bg-primary/10 hover:text-primary hover:scale-110"
+                        className="h-10 w-10 flex items-center justify-center rounded-full border border-border text-muted-foreground transition-all hover:bg-primary/10 hover:text-primary hover:scale-110"
                         title={s.label}
                     >
                         {s.label === "GitHub" && <Github className="h-5 w-5" />}
@@ -67,7 +67,7 @@ export function Hero() {
                 ))}
                  <Link
                     href={`mailto:${person.email}`}
-                    className="h-10 w-10 flex items-center justify-center rounded-full bg-muted text-muted-foreground transition-all hover:bg-primary/10 hover:text-primary hover:scale-110"
+                    className="h-10 w-10 flex items-center justify-center rounded-full border border-border text-muted-foreground transition-all hover:bg-primary/10 hover:text-primary hover:scale-110"
                     title="Email"
                 >
                     <Mail className="h-5 w-5" />
