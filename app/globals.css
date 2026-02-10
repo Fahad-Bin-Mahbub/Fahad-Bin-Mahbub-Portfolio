@@ -140,12 +140,12 @@
     --secondary: 30 10% 96%;
     --secondary-foreground: 25 10% 10%;
     --muted: 30 10% 96%;
-    --muted-foreground: 25 5% 45%;
+    --muted-foreground: 25 5% 80%;
     --accent: 30 10% 96%;
     --accent-foreground: 25 10% 10%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 30 10% 90%;
+    --border: 10 10% 20%;
     --input: 30 10% 90%;
     --ring: 25 95% 53%;
   }
