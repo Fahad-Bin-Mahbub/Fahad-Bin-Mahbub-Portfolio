@@ -35,7 +35,7 @@ export function getTagColor(tag: string): string {
   }
   
   // Concepts & AI (Purple/Violet)
-  if (["ai", "nlp", "iot", "arduino", "security", "jwt", "auth"].some(k => lower.includes(k))) {
+  if (["ai", "nlp", "iot", "arduino", "security", "jwt", "auth", ""].some(k => lower.includes(k))) {
     return "bg-purple-500/10 text-purple-600 dark:text-purple-400 border-purple-500/20";
   }
 
