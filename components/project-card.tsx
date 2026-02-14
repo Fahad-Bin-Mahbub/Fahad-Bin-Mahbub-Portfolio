@@ -35,7 +35,7 @@ export function ProjectCard({ project }: { project: Project }) {
           </span>
         ))}
          {project.tags.length > 3 && (
-            <span className="inline-flex items-center rounded-md border bg-muted px-2 py-0.5 text-[10px] font-medium text-muted-foreground">
+            <span className="inline-flex items-center rounded-md border px-2 py-0.5 text-[10px] font-medium text-muted-foreground">
                 +{project.tags.length - 3}
             </span>
         )}
