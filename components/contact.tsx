@@ -43,7 +43,7 @@ export function Contact() {
                             key={s.label} 
                             href={s.href}
                             target="_blank"
-                            className="flex-1 flex items-center justify-center gap-2 p-3 rounded-xl bg-muted/30 border border-muted hover:border-primary hover:bg-background transition-all text-primary hover:text-foreground"
+                            className="flex-1 flex items-center justify-center gap-2 p-3 rounded-xl bg-muted/30 hover:border-primary hover:bg-background transition-all text-foreground hover:text-primary"
                         >
                             {s.label === "GitHub" && <Github className="h-5 w-5" />}
                             {s.label === "LinkedIn" && <Linkedin className="h-5 w-5" />}
